@@ -1,6 +1,3 @@
-def print_hi(name: str) -> None:
-    print(f'Hi, {name}')
-
-
-if __name__ == '__main__':
-    print_hi('PyCharm')
+x = 1
+y = 5
+print(x+y)
