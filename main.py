@@ -1,3 +1,11 @@
-x = 1
-y = 5
-print(x+y)
+def get_data():
+    x=1
+    y=2
+      z=3
+    return x+y+z
+
+print(get_data(2, 3, 4))
+
+import os
+import json
+import sys
