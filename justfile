@@ -1,5 +1,2 @@
-fix:
-    uv run ruff check --fix
-
-type-check:
+mypy:
     uv run mypy main.py
