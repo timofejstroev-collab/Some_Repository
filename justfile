@@ -3,7 +3,10 @@ test:
 
 #---
 
-lint: ruff-lint
+lint: mypy ruff-lint
+
+mypy:
+    uv run mypy main.py
 
 ruff-lint:
     uv run ruff check --fix
