@@ -1,6 +1,8 @@
-def print_hi(name: str) -> None:
-    print(f'Hi, {name}')
+def get_data(a, b, c):
+    x = 1
+    y = 2
+    z = 3
+    return x + y + z
 
 
-if __name__ == '__main__':
-    print_hi('PyCharm')
+print(get_data(2, 3, 4))
