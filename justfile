@@ -1,3 +1,8 @@
+test:
+    uv run pytest -svv
+
+#---
+
 lint: ruff-lint
 
 ruff-lint:
