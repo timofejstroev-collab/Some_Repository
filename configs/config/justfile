@@ -1,0 +1,20 @@
+test:
+    uv run pytest -svv
+
+#---
+
+lint: mypy ruff-lint
+
+mypy:
+    uv run mypy main.py
+
+ruff-lint:
+    uv run ruff check --fix
+
+#---
+
+fmt: ruff-fmt
+
+ruff-fmt:
+    uv run ruff format
+
