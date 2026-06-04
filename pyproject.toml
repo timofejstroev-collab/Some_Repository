@@ -31,3 +31,4 @@ exclude = [
     ".venv/",
     "tests/",
 ]
+
