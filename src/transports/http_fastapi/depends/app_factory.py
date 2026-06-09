@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from src.transports.http_fastapi.routers import health_router
+from src.transports.http_fastapi.routers.health_router import health_router
 from src.utils.app_settings import get_app_settings
 
 
