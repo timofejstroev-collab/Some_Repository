@@ -1,4 +1,3 @@
-# routers/__init__.py — НЕ пустой
 from fastapi import APIRouter
 
 router = APIRouter()
