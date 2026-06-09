@@ -6,7 +6,7 @@ test:
 lint: mypy ruff-lint
 
 mypy:
-    uv run mypy main.py
+    uv run mypy .
 
 ruff-lint:
     uv run ruff check --fix
