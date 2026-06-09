@@ -1,10 +1,8 @@
 from fastapi import FastAPI
+from src.transports.http_fastapi.routers import router
 
-
-def create_app() -> FastAPI:
+def create_fastapi_app() -> FastAPI:
     app = FastAPI(title="My API", debug=True)
-
-    from src.transports.http_fastapi.routers import router
 
     app.include_router(router)
 
