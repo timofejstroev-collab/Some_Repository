@@ -1,9 +1,7 @@
+from fastapi import FastAPI
 
-from src.transports.http_fastapi.app_factory import create_app
+from src.transports.http_fastapi.depends.app_factory import create_fastapi_app
 
-app = create_app()
 
-if __name__ == "__main__":
-    import uvicorn
-
-    uvicorn.run("src.transports.http_fastapi.app:app", host="127.0.0.1", port=8000, reload=True)
+def main() -> FastAPI:
+    return create_fastapi_app()

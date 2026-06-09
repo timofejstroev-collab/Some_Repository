@@ -6,7 +6,7 @@ test:
 lint: mypy ruff-lint
 
 mypy:
-    uv run mypy main.py
+    uv run mypy .
 
 ruff-lint:
     uv run ruff check --fix
@@ -18,3 +18,7 @@ fmt: ruff-fmt
 ruff-fmt:
     uv run ruff format
 
+#---
+
+start:
+    uvicorn src.transports.http_fastapi.app:main --host 127.0.0.1 --port 8000 --reload --factory
